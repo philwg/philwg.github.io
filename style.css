@@ -1,0 +1,46 @@
+/* -------------------------------------------------
+   style.css – Design rétro Commodore 80
+   ------------------------------------------------- */
+
+/* 1. Couleurs de base (noir + orange) */
+:root {
+    --bg-color: #000000;      /* noir profond */
+    --text-color: #ff8800;    /* orange typique des écrans CRT */
+}
+
+/* 2. Réinitialisation minimale pour éviter les marges inattendues */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Corps de la page */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace; /* police à chasse fixe, rappel 80 s */
+    height: 100vh;               /* occupe toute la hauteur de la fenêtre */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 4. Centrage du contenu principal */
+.centered {
+    text-align: center;
+}
+
+/* 5. Style du titre */
+h1 {
+    font-size: 2.5rem;          /* taille lisible, adaptable */
+    letter-spacing: 0.05em;    /* léger espacement pour l’effet « pixel art » */
+}
+
+/* 6. Désactivation explicite de tout comportement de suivi */
+/* (aucun script, donc rien à désactiver, mais on indique clairement l’intention) */
+html {
+    /* Pas de politique de suivi – aucune donnée collectée */
+}
